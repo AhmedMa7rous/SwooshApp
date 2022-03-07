@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeaguesViewController" customModule="SwooshApp" customModuleProvider="target">
+            <connections>
+                <outlet property="favouriteView" destination="Hjf-Y8-HXp" id="9aG-sE-4Xb"/>
+                <outlet property="favouritesStateLbl" destination="rXP-vW-9bq" id="vfX-IO-vvp"/>
+                <outlet property="leaguesTableView" destination="IZo-cV-aWC" id="bLg-gv-9sc"/>
+                <outlet property="view" destination="iN0-l3-epB" id="S80-kq-Frw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="yhQ-4r-WN1">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IZo-cV-aWC">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjf-Y8-HXp">
+                    <rect key="frame" x="30" y="752" width="354" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League Added To Favourites!" textAlignment="center" lineBreakMode="wordWrap" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="rXP-vW-9bq">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="1eP-hl-jm1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25960427520000001" green="0.2611998022" blue="0.25120365620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="rXP-vW-9bq" firstAttribute="leading" secondItem="Hjf-Y8-HXp" secondAttribute="leading" id="Z1Z-xr-8cl"/>
+                        <constraint firstItem="rXP-vW-9bq" firstAttribute="centerY" secondItem="Hjf-Y8-HXp" secondAttribute="centerY" id="cCu-Lz-XsH"/>
+                        <constraint firstAttribute="height" constant="60" id="s42-sh-YKK"/>
+                        <constraint firstAttribute="trailing" secondItem="rXP-vW-9bq" secondAttribute="trailing" id="zzH-go-3Ro"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hjf-Y8-HXp" secondAttribute="trailing" constant="30" id="5v1-Sj-199"/>
+                <constraint firstItem="IZo-cV-aWC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PA9-T4-JkU"/>
+                <constraint firstItem="yhQ-4r-WN1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VxH-xH-AYx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Hjf-Y8-HXp" secondAttribute="bottom" constant="50" id="XpN-ex-KNV"/>
+                <constraint firstAttribute="bottom" secondItem="yhQ-4r-WN1" secondAttribute="bottom" id="YCu-M3-bMz"/>
+                <constraint firstItem="yhQ-4r-WN1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eXa-Ar-aYr"/>
+                <constraint firstItem="Hjf-Y8-HXp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="qk5-gA-ulZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IZo-cV-aWC" secondAttribute="bottom" id="r7G-FJ-ao8"/>
+                <constraint firstItem="IZo-cV-aWC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tUm-gg-OzR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yhQ-4r-WN1" secondAttribute="trailing" id="vZp-Wt-g8G"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IZo-cV-aWC" secondAttribute="trailing" id="zOU-EH-hDH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="141" y="111"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="desiredLeagueBG" width="414" height="736"/>
+    </resources>
+</document>

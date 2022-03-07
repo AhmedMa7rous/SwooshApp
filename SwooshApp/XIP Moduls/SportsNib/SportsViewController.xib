@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SportsViewController" customModule="SwooshApp" customModuleProvider="target">
+            <connections>
+                <outlet property="sportsCollectionView" destination="KXM-0K-Unr" id="qth-EM-Qzx"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5Zc-rf-LFv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="BMl-so-1U7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KXM-0K-Unr">
+                    <rect key="frame" x="15" y="44" width="384" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="080-BT-x93">
+                        <size key="itemSize" width="193" height="194"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BMl-so-1U7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="06l-k3-a2g"/>
+                <constraint firstItem="BMl-so-1U7" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="889-d0-z7I"/>
+                <constraint firstItem="KXM-0K-Unr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ov7-3d-pQJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KXM-0K-Unr" secondAttribute="bottom" id="RrZ-uw-wz1"/>
+                <constraint firstItem="KXM-0K-Unr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="WQC-M3-0Iu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KXM-0K-Unr" secondAttribute="trailing" constant="15" id="apx-gN-68r"/>
+                <constraint firstAttribute="bottom" secondItem="BMl-so-1U7" secondAttribute="bottom" id="ccE-9p-tkH"/>
+                <constraint firstItem="BMl-so-1U7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qsi-5g-INq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="111"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="desiredLeagueBG" width="414" height="736"/>
+    </resources>
+</document>
